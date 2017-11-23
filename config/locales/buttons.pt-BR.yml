@@ -2,6 +2,8 @@
   buttons:
     show: Mostrar
     new: Novo
+    send: Gravar
     edit: Editar
     destroy: Remover
     back: Voltar
+    back_to_list: Voltar para lista    
