@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
+  #filtros
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
-  before_action :kind_options_for_select, only: [:edit, :new]
+  before_action :set_options_for_select, only: [:create, :update, :edit, :new]
 
   # GET /contacts
   # GET /contacts.json
@@ -65,7 +66,7 @@ class ContactsController < ApplicationController
   
   private
 
-    def kind_options_for_select
+    def set_options_for_select
       @kind_options_for_select = Kind.all      
     end
   

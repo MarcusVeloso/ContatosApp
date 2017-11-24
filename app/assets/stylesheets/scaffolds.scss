@@ -33,10 +33,18 @@ a{
 .basic-grey div.field>label {
     float: left;
     width: 20%;
-    text-align: right;
+    text-align: left;
     padding-right: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
     color: #888;
+}
+.basic-grey div.field_with_errors>label {
+    float: left;
+    width: 20%;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 0px;
+    color: #ff0000;
 }
 .basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
     border: 1px solid #DADADA;
