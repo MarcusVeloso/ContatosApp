@@ -1,24 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="basic-grey">
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @contact.name %>
-</p>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @contact.name %>
+	</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @contact.email %>
-</p>
+	<p>
+	  <strong>Email:</strong>
+	  <%= @contact.email %>
+	</p>
 
-<p>
-  <strong>Kind:</strong>
-  <%= @contact.kind %>
-</p>
+	<p>
+	  <strong>Kind:</strong>
+	  <%= @contact.kind %>
+	</p>
 
-<p>
-  <strong>Remarkable:</strong>
-  <%= @contact.remarkable %>
-</p>
+	<p>
+	  <strong>Remarkable:</strong>
+	  <%= @contact.remarkable %>
+	</p>
 
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+	<%= link_to 'Edit', edit_contact_path(@contact) %> |
+	<%= link_to 'Back', contacts_path %>
+</div>
