@@ -6,6 +6,10 @@ gem 'rails-assets-bootstrap', '3.3.6', source: 'https://rails-assets.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
+gem 'bundler', '>= 1.8.4'
+
+# A simple, versatile notification library
+gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 # i18n for kaminari-i18n
 gem 'kaminari-i18n'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps https://github.com/amatsuda/kaminari/…
