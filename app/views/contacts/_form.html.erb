@@ -40,8 +40,8 @@
     <% end %>
     
   <div class="field">
-    <%= f.label :phones, "+" %><br>
-    <%=link_to_add_association('[Adicionar, Telefone]',f,:phones)%>
+    <%= f.label :phones, "<span class='glyphicon glyphicon-phone-alt' aria-hidden='true'></span>".html_safe %><br>
+    <%=link_to_add_association('[Adicionar Telefone]',f,:phones)%>
   </div>
   </div>
 
@@ -52,8 +52,8 @@
 
 
   <div class="actions">
-    <%= f.submit "Enviar", class:"button" %>
-    <%= link_to t('buttons.back_to_list'), contacts_path, class:"button"%>
+    <%= f.submit "Enviar", class:"btn btn-primary" %>
+    <%= link_to t('buttons.back_to_list'), contacts_path, class:"btn btn-success"%>
   </div>
 
   <% if @contact.errors.any? %>

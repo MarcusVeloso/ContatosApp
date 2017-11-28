@@ -1,8 +1,14 @@
-<p id="notice"><%= notice %></p>
+<div class="basic-grey">
+
+<script>
+$.notify("<%= notice %>", "success");
+</script>
+
+<p id="notice"></p>
 
 <h1><%= "#{t('message.listing')} #{@kinds.model.model_name.human(count: @kinds.count)}" %></h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th><%= @kinds.model.human_attribute_name("description") %></th>
@@ -13,8 +19,7 @@
   <tbody>
     <% @kinds.each do |kind| %>
       <tr>
-        <td><%= kind.description %></td>
-        <td><%= link_to t('buttons.show'), kind %></td>
+        <td><%= kind.description %></td>        
         <td><%= link_to t('buttons.edit'), edit_kind_path(kind) %></td>
         <td><%= link_to t('buttons.destroy'), kind, method: :delete, data: { confirm: t('message.confirm') } %></td>
       </tr>
@@ -24,4 +29,7 @@
 
 <br>
 
-<%= link_to t('buttons.new'), new_kind_path %>
+<%= link_to t('buttons.new'), new_kind_path, class:"btn btn-primary" %>
+<%= link_to t('buttons.back'), home_index_path, class:"btn btn-success"%>
+
+</div>

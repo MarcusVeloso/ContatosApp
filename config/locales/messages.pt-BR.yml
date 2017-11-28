@@ -2,5 +2,9 @@
     message:
       wellcome: Seja bem-vindo!
       confirm: Tem certeza?
-      listing: Listando
+      new: Cadastro de
+      listing: Listando      
       prohibited_from_being_saved: erro(s). Não foi possível gravar o registro        
+      created: Item criado com sucesso!
+      updated: Item atualizado com sucesso!
+      destroyed: Item removido com sucesso!
