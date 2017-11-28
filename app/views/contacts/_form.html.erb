@@ -1,6 +1,7 @@
 <%= form_for(@contact, html:{class:"basic-grey"}) do |f| %>
 
-  <h1>Contacts</h1>
+<h1><%="#{t('message.new')} #{@contact.model_name.human}" %></h1>
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
